@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+}
+
+main {
+  width: 100vw;
+  position: absolute;
+  min-height: 100vh;
+  z-index: -2;
+  width: 100vw;
+  background-color: #0b0c3ce6;
+}
+
+.blackout {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0c3ce6;
+  z-index: -3;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: #08061d;
+  flex-direction: row;
+  position: fixed;
+  z-index: 7;
+}
+
+#mobile_btn {
+  display: none;
+
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 50px;
+  padding: 20px;
+}
+
+a {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.tittle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  width: 220px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+  margin-left: 0px;
+}
+
+.box3 {
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 27px;
+}
+
+img {
+  width: 300px;
+  margin-left: 84px;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.title-nome {
+  position: relative;
+  font-size: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(40) forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  99% {
+    width: 100%;
+    border-right: 2px solid #000;
+  }
+
+  100% {
+    width: 100%;
+    border-right: 0;
+    animation-play-state: paused;
+  }
+}
+
+.bi-linkedin {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+#inicio {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  padding-bottom: 500px;
+}
+
+.container-foto {
+  padding-top: 400px;
+  margin-left: 30px;
+  display: flex;
+}
+
+.box-right {
+  position: relative;
+  left: 550px;
+  padding-top: 120px;
+}
+
+.box-left {
+  padding: 10px;
+}
+
+.container-image {
+  padding-top: 100px;
+}
+
+.container-image img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 300px;
+}
+
+.container-nome {
+  text-align: center;
+}
+
+.title-nome {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.siga-me {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 10px 10px 23px;
+  width: 150px;
+  margin-left: 75px;
+}
+
+.siga-me:hover {
+  background-color: #08061d;
+}
+
+
+
+.container-bio {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.container-lefttext {
+  width: 50vw;
+  margin-top: 250px;
+  text-align: justify;
+  margin-left: 20px;
+}
+
+.container-right-vetor4 img {
+  width: 38vw;
+  margin-top: 150px;
+
+
+
+
+}
+
+
+
+.carrossel {
+  margin-top: 200px;
+  padding-top: 200px;
+
+}
+
+
+.carrossel-inverso .item {
+  animation: reverseRun 6s linear infinite;
+  animation-delay: var(--delay);
+  border-radius: 30px;
+
+}
+
+.item {
+  width: var(--width);
+  height: 50px;
+  position: absolute;
+  animation: autoRun 6s infinite linear;
+  animation-delay: var(--delay);
+  cursor: pointer;
+
+
+
+}
+
+.item img {
+  width: 100%;
+
+}
+
+.capa {
+  width: 150px;
+  height: 91px;
+}
+
+.carrossel:hover .item {
+
+  animation-play-state: paused;
+  filter: grayscale(1);
+
+
+}
+
+.carrossel-inverso:hover .item {
+  animation-play-state: paused;
+  filter: grayscale(1);
+}
+
+.carrossel .item:hover {
+  filter: grayscale(0);
+}
+
+.carrossel-inverso .item:hover {
+  filter: grayscale(0);
+}
+
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -50px;
+  }
+
+}
+
+@keyframes reverseRun {
+  from {
+    left: -50px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+
+#contatos {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: justify;
+  padding-top: 240px;
+  z-index: -1;
+  gap: 10px;
+
+
+}
+
+
+.leftcontato {
+  position: relative;
+  flex-wrap: wrap;
+  width: 50%;
+  height: auto;
+  margin-left: 70px;
+  padding: 20px;
+
+}
+
+
+
+
+.rightformulario {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+.rightformulario {
+  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: 0;
+}
+
+
+
+
+.rightformulario label {
+  display: block;
+  /* exibir os labels como blocos */
+  margin-bottom: 10px;
+  /* espaçamento entre os labels e os inputs */
+  width: 500px;
+}
+
+.rightformulario input,
+.rightformulario textarea {
+  color: #000;
+  width: 90%;
+  /* largura dos inputs e textarea */
+  padding: 10px;
+  /* espaçamento interno dos inputs e textarea */
+  border: 1px solid #ccc;
+  /* borda dos inputs e textarea */
+  border-radius: 5px;
+  /* arredondamento das bordas dos inputs e textarea */
+}
+
+.rightformulario button[type="submit"] {
+  background-color: #0069d9;
+  /* cor de fundo do botão de envio */
+  color: #fff 10%;
+  /* cor do texto do botão de envio */
+  padding: 10px 20px;
+  /* espaçamento interno do botão de envio */
+  border: none;
+  /* remover borda do botão de envio */
+  border-radius: 5px;
+  /* arredondamento das bordas do botão de envio */
+  cursor: pointer;
+  /* ponteiro do mouse sobre o botão de envio */
+}
+
+.rightFormulario button[type="submit"]:hover {
+  background-color: #08061d;
+  /* cor de fundo do botão de envio ao passar o mouse */
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Edge, and Safari */
+  color: #000;
+}
+
+::-moz-placeholder {
+  /* Firefox */
+  color: #000;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100vw;
+    height: 2500px;
+  }
+
+  header {
+    width: 100%;
+    border-color: #08061d;
+    height: 15%;
+  }
+
+  .box {
+    width: 56.25px;
+    height: 52px;
+    padding-left: 20px;
+  }
+
+  .tittle {
+    margin-left: 35px;
+    font-size: 20px;
+    margin-right: 0;
+  }
+   .container-bio{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+
+  }
+  .box2 {
+    visibility: hidden;
+
+  }
+
+  .box-right{
+    visibility: hidden;
+  }
+   .container-right-vetor4{
+    visibility: hidden;
+   }
+
+
+  p {
+    width: 90vw;
+  }
+
+  li {
+    width: 90vw;
+  }
+
+ form{
+  width: 90vw;
+
+ }
+
+}
+@media (max-width: 768px) {
+  section#contatos {
+    flex-direction: column;
+  }
+
+  .leftcontato {
+    margin-bottom: 10px;
+  }
+
+  .rightformulario {
+    margin-top: 10px;
+  }
+
+  .rightformulario label {
+    margin-bottom: 5px;
+  }
+
+  .rightformulario input, .rightformulario textarea {
+    padding: 5px;
+  }
+
+  .rightformulario button[type="submit"] {
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #mobile_btn {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-left: 70px;
+    font-size: 35px;
+    background-color: #08061d;
+    border: none;
+  }
+
+
+  /* Esconde o menu por padrão */
+  #mobile_nav_list {
+    display: none;
+
+
+  }
+
+  /* Exibe o menu quando o usuário passa o mouse sobre o botão */
+  #mobile_btn button:hover+#mobile_nav_list {
+    display: block;
+    border: none;
+  }
+
+  /* Estiliza o menu para mobile */
+  #mobile_nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #mobile_nav_list li {
+    margin-bottom: 10px;
+  }
+
+  #mobile_nav_list a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  #mobile_nav_list a:hover {
+    color: #666;
+  }
+}
+
+
+
+footer {
+ 
+  background-color: #08061d;
+  /* Cor de fundo do rodapé */
+  color: #fff;
+  /* Cor do texto no rodapé */
+  text-align: center;
+  /* Alinhamento do texto (centralizado) */
+  padding: 10px;
+  /* Espaçamento interno do rodapé */
+  width: 100%;
+  height: 20vh;
+}
