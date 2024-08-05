@@ -141,13 +141,14 @@ h3 {
 
 #inicio {
   display: flex;
-  width: 300px;
+  width: 100vw;
   height: 100px;
   padding: 20px;
   padding-bottom: 500px;
 }
 
 .container-foto {
+  
   padding-top: 400px;
   margin-left: 30px;
   display: flex;
